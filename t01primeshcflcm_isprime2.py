@@ -3,10 +3,12 @@
 # Can you rectify the following program error?
 
 num = 61
-
-prime = True
-for i in range(2,num): # won't work for 2 which is the only even prime
+num_factors = 0
+for i in range(1,num+1): 
   if num % i == 0:
+    num_factors += 1
     prime = False
+if num_factors == 2
+    prime = True
   
 print(prime)
